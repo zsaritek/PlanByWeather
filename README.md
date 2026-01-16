@@ -19,11 +19,10 @@ This repo is optimized for learning and local development: the browser UI stays 
 - **Rules**: Signals like rain / extreme temp / wind influence the type of suggestions and their confidence.
 - **Recommendations (server-side)**: The OpenAI call runs **inside the Edge Function**. The frontend only triggers the request and displays the JSON response.
 
+## Screenshots
 
-```md
 ![Home](docs/screenshots/planByWeather_main.png)
 ![Results](docs/screenshots/planByWeather.png)
-```
 
 Suggested shots to capture:
 - Home screen (empty state)
@@ -45,24 +44,6 @@ The repo uses **two env layers**:
 - **Server-side (Edge Function)**: root `.env`
 - **Frontend (Vite)**: `web/.env.local`
 
-
-Example `.env.example`:
-
-```txt
-OPENAI_API_KEY=
-SUPABASE_URL=
-SUPABASE_ANON_KEY=
-WEATHER_API_KEY=
-```
-
-For the frontend (Vite), create `web/.env.local` (do not commit):
-
-```txt
-VITE_SUPABASE_URL=...
-VITE_SUPABASE_ANON_KEY=...
-```
-
-> Note: Vite only exposes variables prefixed with `VITE_` to the browser. That’s why frontend env names differ.
 
 ### 3) Start Supabase locally
 
