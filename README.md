@@ -108,7 +108,7 @@ You added this diagram and notes—kept as-is, just moved under a dedicated sect
 │        (React + Vite)       │
 └──────────────┬──────────────┘
                │
-               │ supabase.functions.invoke("recommend")
+               │ supabase.functions.invoke
                ▼
 ┌─────────────────────────────┐
 │           Supabase          │
