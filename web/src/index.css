@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* A tiny baseline so the UI starts looking good even before we add components. */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-100 antialiased;
+}
