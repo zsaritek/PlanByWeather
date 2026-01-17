@@ -19,7 +19,7 @@ This repo is optimized for learning and local development: the browser UI stays 
 - **Rules**: Signals like rain / extreme temp / wind influence the type of suggestions and their confidence.
 - **Recommendations (server-side)**: The OpenAI call runs **inside the Edge Function**. The frontend only triggers the request and displays the JSON response.
 
-## Screenshots
+## Images
 
 ![Home](docs/screenshots/planByWeather_main.png)
 ![Results](docs/screenshots/planByWeather.png)
@@ -72,9 +72,8 @@ npm run dev
 ```
 
 
-## Notes (trade-offs, security)
+## Notes 
 
-- **The OpenAI key never goes to the browser**: `OPENAI_API_KEY` exists only in the Edge Function env.
 - **The Supabase anon key can live in the frontend**: it’s meant for public use (no service role key in this project).
 - `.env` is not committed, `.env.example` is: setup stays easy without leaking secrets.
 
@@ -150,8 +149,8 @@ You added this diagram and notes—kept as-is, just moved under a dedicated sect
 │                                              │
 │  Runs locally:                               │
 │  - Postgres                                  │
-│  - Auth                                     │
-│  - Edge Functions runtime                   │
+│  - Auth                                      │
+│  - Edge Functions runtime                    │
 └──────────────────────────────────────────────┘
 
 ```
