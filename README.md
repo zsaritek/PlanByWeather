@@ -154,9 +154,4 @@ You added this diagram and notes—kept as-is, just moved under a dedicated sect
 │  - Edge Functions runtime                   │
 └──────────────────────────────────────────────┘
 
-Notes:
-- Docker is NOT part of the production app.
-- Docker is used only for local Supabase development.
-- Frontend runs without Docker.
-- Secrets are never exposed to the browser.
 ```
